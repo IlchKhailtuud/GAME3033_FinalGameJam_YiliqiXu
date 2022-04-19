@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 886f7979cf641434ea2acae1fc1199a0
+  - enabled: 1
+    path: Assets/Scenes/FallGuy.unity
+    guid: 3a04ad64f2e82d742bf59b0acae5f9a8
+  m_configObjects: {}
