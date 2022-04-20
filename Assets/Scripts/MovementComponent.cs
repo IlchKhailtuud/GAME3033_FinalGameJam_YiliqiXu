@@ -25,7 +25,14 @@ public class MovementComponent : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     private Vector3 moveDirection = Vector3.zero;
     private Vector2 lookInput = Vector2.zero;
-    
+    private float moveSpeedPara = 1.0f;
+
+    public float MoveSpeedPara
+    {
+        get => moveSpeedPara;
+        set => moveSpeedPara = value;
+    }
+
     public float aimSensitivity = 1.0f;
     
     public readonly int movementXHash = Animator.StringToHash("MovementX");
@@ -81,7 +88,7 @@ public class MovementComponent : MonoBehaviour
         moveDirection = transform.forward * inputVector.y + transform.right * inputVector.x;
         float currentSpeed = playerController.isRunning ? runSpeed : walkSpeed;
 
-        Vector3 movementDirection = moveDirection * (currentSpeed * Time.deltaTime);
+        Vector3 movementDirection = moveDirection * (currentSpeed * Time.deltaTime) * moveSpeedPara;
 
         //rigidbody.velocity = 
         transform.position += movementDirection;
