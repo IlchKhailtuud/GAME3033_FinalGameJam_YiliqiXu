@@ -624,13 +624,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Try to stay in the light (yellow plane) for 10s
+  m_text: 'Use ''W'', ''A'', ''S'', ''D'' to move around
 
 
-    Win: Stay in the
-    light for 10s
+    Avoid the obstacles
+    and try to stay in the light (yellow plane) for 10s
 
-    Lose: Run out of time'
+
+    Rotating Red Cube bounces
+    you off
+
+    Blue plain slows you down
+
+
+    Win: Stay in the light for 10s
+
+    Lose:
+    Run out of time'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -657,7 +667,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.45
+  m_fontSize: 28.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1175,7 +1185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &785297179
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2005,8 +2015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -141}
-  m_SizeDelta: {x: 287.7161, y: 125.86261}
+  m_AnchoredPosition: {x: 0, y: -146}
+  m_SizeDelta: {x: 473.2327, y: 121.6702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468998855
 MonoBehaviour:
@@ -2028,7 +2038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fall Guy
+  m_text: Catch the Light
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2055,7 +2065,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 70.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2255,7 +2265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1624561637
 RectTransform:
   m_ObjectHideFlags: 0
