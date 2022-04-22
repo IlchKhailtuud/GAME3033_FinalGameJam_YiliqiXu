@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("FallGuy");
+        SceneManager.LoadScene("SpotLight");
     }
     
     public void ShowMenu()

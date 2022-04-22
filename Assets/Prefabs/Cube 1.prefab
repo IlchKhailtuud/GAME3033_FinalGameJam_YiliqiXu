@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5698214192257089557}
   - component: {fileID: 5698214192257089558}
   - component: {fileID: 5698214192257089559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5698214192257089552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 32.98, y: 5.11, z: 21.87}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 15, y: 4.77, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5698214193429692252}
@@ -117,7 +117,7 @@ MonoBehaviour:
   - {fileID: 5698214192984659539}
   targetLocationList: []
   index: 0
-  moveSpeed: 0.1
+  moveSpeed: 0.005
 --- !u!1 &5698214192984659548
 GameObject:
   m_ObjectHideFlags: 0

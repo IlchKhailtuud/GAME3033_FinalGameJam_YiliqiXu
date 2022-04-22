@@ -601,8 +601,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 13}
-  m_SizeDelta: {x: 804.5253, y: 322.9463}
+  m_AnchoredPosition: {x: -0.5524, y: 13}
+  m_SizeDelta: {x: 803.4205, y: 322.9463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455653448
 MonoBehaviour:
@@ -624,23 +624,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use ''W'', ''A'', ''S'', ''D'' to move around
-
-
-    Avoid the obstacles
-    and try to stay in the light (yellow plane) for 10s
-
-
-    Rotating Red Cube bounces
-    you off
-
-    Blue plain slows you down
-
-
-    Win: Stay in the light for 10s
-
-    Lose:
-    Run out of time'
+  m_text: "Use 'W', 'A', 'S', 'D' to move around\n\nAvoid the obstacles and try to
+    stay in the light (yellow plane) for 10s\n\nRotating Red Wall & \"up-and-down\"
+    Green Cube blocks your way \nBlue Plain slows you down\n\nWin: Stay in the light
+    for 10s\nLose: Run out of time"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -667,7 +654,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.15
+  m_fontSize: 27.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1539,9 +1526,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Zihan Xu 101288760
+  m_text: 'Zihan "GBC" Xu
 
-    Yiliqi 101289355'
+    101288760
+
+    Fnu "Sheridanian" Yiliqi
+
+    101289355'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1568,7 +1559,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 70.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

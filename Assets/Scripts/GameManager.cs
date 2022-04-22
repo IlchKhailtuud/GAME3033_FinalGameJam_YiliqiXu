@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public TMP_Text remainingTimeText;
     public TMP_Text goalTimeText;
+    public Slider timeSlider;
     
     [Header("GameSettings")] 
     
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeSlider.value = 0.0f;
     }
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
         if (isStartCount)
         {
             timeCounter += Time.deltaTime;
+            timeSlider.value = timeCounter / timeGoal;
         }
         
         goalTimeText.text = timeCounter.ToString("0");

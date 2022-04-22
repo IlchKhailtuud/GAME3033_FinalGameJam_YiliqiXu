@@ -11,9 +11,9 @@ using Vector3 = UnityEngine.Vector3;
 public class MovementComponent : MonoBehaviour
 {
     //movement variables
-    [SerializeField] float walkSpeed =5;
-    [SerializeField] float runSpeed = 10;
-    [SerializeField] float jumpForce =5;
+    [SerializeField] private float walkSpeed = 10;
+    [SerializeField] private float runSpeed = 20;
+    [SerializeField] private float jumpForce = 5;
 
     //components
     private PlayerController playerController;
@@ -25,7 +25,7 @@ public class MovementComponent : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     private Vector3 moveDirection = Vector3.zero;
     private Vector2 lookInput = Vector2.zero;
-    private float moveSpeedPara = 2.0f;
+    private float moveSpeedPara = 1.0f;
 
     public float MoveSpeedPara
     {
@@ -88,10 +88,11 @@ public class MovementComponent : MonoBehaviour
         moveDirection = transform.forward * inputVector.y + transform.right * inputVector.x;
         float currentSpeed = playerController.isRunning ? runSpeed : walkSpeed;
 
-        Vector3 movementDirection = moveDirection * (currentSpeed * Time.deltaTime) * moveSpeedPara;
+        Vector3 movementDirection = moveDirection * (currentSpeed * Time.deltaTime * moveSpeedPara);
 
         //rigidbody.velocity = 
         transform.position += movementDirection;
+        //Debug.Log($"{movementDirection.magnitude}");
     }
 
     public void OnMovement(InputValue value)
