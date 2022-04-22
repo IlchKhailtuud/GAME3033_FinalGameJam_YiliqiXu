@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text remainingTimeText;
     public TMP_Text goalTimeText;
     public Slider timeSlider;
+    public GameObject pauseMenu;
     
     [Header("GameSettings")] 
     
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timeSlider.value = 0.0f;
+        AudioManager.instance.Play(SoundType.MUSIC,"GameMusic");
     }
 
     // Update is called once per frame
@@ -61,5 +63,24 @@ public class GameManager : MonoBehaviour
             remainingTimeText.text = timeLimit.ToString("0");
             SceneManager.LoadScene("Lose");
         }
+    }
+    
+    public void Pause()
+    {
+        //Debug.Log("Pause");
+        Time.timeScale = 0.0f;
+        pauseMenu.SetActive(true);
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1.0f;
+        pauseMenu.SetActive(false);
+    }
+
+    public void GoToMenu()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Menu");
     }
 }
