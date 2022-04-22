@@ -25,7 +25,7 @@ public class MovementComponent : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     private Vector3 moveDirection = Vector3.zero;
     private Vector2 lookInput = Vector2.zero;
-    private float moveSpeedPara = 1.0f;
+    private float moveSpeedPara = 2.0f;
 
     public float MoveSpeedPara
     {
